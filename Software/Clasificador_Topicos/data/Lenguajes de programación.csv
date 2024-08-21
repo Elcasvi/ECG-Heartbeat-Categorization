@@ -1,0 +1,50 @@
+A class defines the data and behavior of objects.
+A namespace is a container that holds classes structs and enums.
+The using directive allows you to use types from a namespace without fully qualifying their names.
+A static class cannot be instantiated and contains only static members.
+A constructor initializes a new instance of a class.
+The override keyword is used to provide a new implementation for a method inherited from a base class.
+An interface defines a contract that classes can implement.
+A struct is a value type that can contain data members and methods.
+An abstract class cannot be instantiated and must be inherited by other classes.
+The virtual keyword allows a method to be overridden in a derived class.
+An event allows a class to provide notifications to other classes or objects.
+A delegate is a type that represents references to methods with a specific parameter list and return type.
+The params keyword allows a method to accept a variable number of arguments.
+The async keyword defines a method that can run asynchronously.
+The await keyword is used to pause the execution of an async method until the awaited task completes.
+A property provides a way to read write or compute the value of a private field.
+The ref keyword indicates that a parameter is passed by reference.
+The out keyword specifies that a parameter is passed by reference and is intended to be assigned within the method.
+The readonly keyword makes a field immutable after it is initialized.
+The finally block is used to execute code after a try block regardless of whether an exception was thrown.
+The try block contains code that might throw an exception.
+The catch block handles exceptions that occur in the try block.
+The throw keyword is used to raise an exception.
+The default keyword provides a default value for a type parameter or a default case in a switch statement.
+The switch statement executes code based on the value of an expression.
+The case keyword defines a branch in a switch statement.
+The break statement exits from a loop or switch statement.
+The continue statement skips the remaining code in a loop iteration and proceeds to the next iteration.
+The for loop executes a block of code a specified number of times.
+The foreach loop iterates over a collection of items.
+The while loop executes a block of code as long as a specified condition is true.
+The do loop executes a block of code once then repeats the execution as long as a specified condition is true.
+The try catch statement is used for exception handling.
+The interface keyword defines a contract that classes must follow.
+The new keyword creates an instance of a class or struct.
+The return statement exits a method and optionally returns a value.
+The base keyword refers to the base class of the current instance.
+The this keyword refers to the current instance of a class.
+The params keyword allows a method to accept a variable number of arguments.
+The null keyword represents a null reference.
+The is keyword checks if an object is compatible with a given type.
+The as keyword attempts to cast an object to a specified type returning null if the cast fails.
+The enum keyword defines a set of named constants.
+The typeof keyword obtains the System.Type object for a type.
+The dynamic keyword allows for dynamic type checking at runtime.
+The object type is the base type for all types in C sharp.
+The var keyword infers the type of a variable from the expression on the right side of the assignment.
+The lock statement ensures that a block of code runs by only one thread at a time.
+The using statement ensures that resources are properly disposed of.
+The null coalescing operator provides a default value if the left-hand operand is null.
