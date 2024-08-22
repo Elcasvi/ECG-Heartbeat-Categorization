@@ -1,0 +1,51 @@
+short_description,topic
+Regrets and mistakes they're memories made,1
+I've got sunshine on a cloudy day with my girl,1
+I've got a sweeter song than the birds in the trees,1
+Give you some time to prove that I can trust you again,1
+And catch the tears whenever you cry,1
+And in my dreams I've kissed your lips a thousand times,1
+I'm out of my head hopelessly devoted to you,1
+And now you know I can't smile without you,1
+I go out every night and sleep all day,1
+Just to let you know that I'm still around,1
+Well life would still go on believe me,1
+Oh then turn around and make up,1
+You're all I've ever wanted and my arms are open wide,1
+If she said that's the way it ought to be,1
+Though life would still go on believe me,1
+Now my baby's dancin' but she's dancin' with another man,1
+"And that you'd be reminded that for me, it isn't over",1
+I'll think of you each step of the way,1
+Somewhere in her smile she knows,1
+It's been so lonely without you here,1
+You're my end and my beginning,1
+Is there really no chance to start once again?,1
+They say true love's the greatest weapon,1
+When it's cold outside I've got the month of May,1
+I found a dream that I could speak to,1
+A class defines the data and behavior of objects.,2
+A namespace is a container that holds classes structs and enums.,2
+The using directive allows you to use types from a namespace without fully qualifying their names.,2
+A static class cannot be instantiated and contains only static members.,2
+A constructor initializes a new instance of a class.,2
+The override keyword is used to provide a new implementation for a method inherited from a base class.,2
+An interface defines a contract that classes can implement.,2
+A struct is a value type that can contain data members and methods.,2
+An abstract class cannot be instantiated and must be inherited by other classes.,2
+The virtual keyword allows a method to be overridden in a derived class.,2
+An event allows a class to provide notifications to other classes or objects.,2
+A delegate is a type that represents references to methods with a specific parameter list and return type.,2
+The params keyword allows a method to accept a variable number of arguments.,2
+The async keyword defines a method that can run asynchronously.,2
+The await keyword is used to pause the execution of an async method until the awaited task completes.,2
+A property provides a way to read write or compute the value of a private field.,2
+The ref keyword indicates that a parameter is passed by reference.,2
+The out keyword specifies that a parameter is passed by reference and is intended to be assigned within the method.,2
+The readonly keyword makes a field immutable after it is initialized.,2
+The finally block is used to execute code after a try block regardless of whether an exception was thrown.,2
+The try block contains code that might throw an exception.,2
+The catch block handles exceptions that occur in the try block.,2
+The throw keyword is used to raise an exception.,2
+The default keyword provides a default value for a type parameter or a default case in a switch statement.,2
+The switch statement executes code based on the value of an expression.,2
