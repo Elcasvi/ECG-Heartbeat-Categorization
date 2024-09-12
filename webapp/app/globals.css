@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./base.css";
+
+body {
+  overflow-x: hidden;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;

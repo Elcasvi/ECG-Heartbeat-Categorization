@@ -1,0 +1,77 @@
+:root {
+  /* Responsive Colors */
+  --black: #000;
+  --darkergrey: #444;
+  --darkgrey: #555;
+  --mediumgrey: #777;
+  --grey: #999;
+  --lightgrey: #ddd;
+  --lightergrey: #eee;
+  --lightestgrey: #f6f6f6;
+  --almostwhite: #f9f9f9;
+  --white: #fff;
+
+  --main: #8371cd;
+  --accent: #8371cd;
+  --light: #9e8af2;
+
+  /* Gradients */
+  --bg_gradient: linear-gradient(
+    95deg,
+    rgba(245, 245, 245, 1) 0%,
+    rgba(230, 230, 230, 1) 100%
+  );
+
+  --color: linear-gradient(
+    -35deg,
+    rgba(165, 138, 255, 1) 0%,
+    rgba(118, 0, 221, 1) 100%
+  );
+
+  /* Responsive font sizes */
+  --XXXXL: max(min(3vw, 4rem), 2.5rem);
+  --XXXL: max(min(2.7vw, 3rem), 2rem);
+  --XXL: max(min(2.5vw, 2.5rem), 1.7rem);
+  --XL: max(min(2.3vw, 2.2rem), 1.5rem);
+  --LG: max(min(2.2vw, 1.9rem), 1.05rem);
+  --L: max(min(2.2vw, 1.8rem), 0.9rem);
+  --MG: max(min(1.9vw, 1.7rem), 0.85rem);
+  --M: max(min(1.9vw, 1.5rem), 0.85rem);
+  --S: max(min(1.7vw, 1.2rem), 0.8rem);
+  --SX: max(min(1.3vw, 1.1rem), 0.77rem);
+  --XS: max(min(1vw, 1rem), 0.75rem);
+  --XXS: max(min(1vw, 1rem), 0.7rem);
+  --XXXS: max(min(0.85vw, 0.9rem), 0.6rem);
+
+  /* Extra font sizes */
+  @media (max-width: 400px) {
+    --4XL: max(min(3.5vw, 4rem), 1rem);
+  }
+  @media (min-width: 400px) {
+    --4XL: max(min(3.5vw, 4rem), 1.4rem);
+  }
+  --EM: max(min(2.5vw, 2.2rem), 1rem);
+  --EMS: max(min(2.5vw, 2.2rem), 0.9rem);
+  --ES: max(min(2.2vw, 2rem), 0.8rem);
+  --ESM: max(min(2vw, 2rem), 0.75rem);
+  --EXS: max(min(1.5vw, 1.8rem), 0.7rem);
+  --EXXSM: max(min(1.5vw, 1.4rem), 0.7rem);
+  --EXXS: max(min(1.2vw, 1.3rem), 0.55rem);
+
+  /* Effects */
+  --radius: max(min(1vw, 13px), 7px);
+
+  --glow: 0 0 7px 3px rgba(0, 0, 0, 0.2);
+
+  --shortglow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+  --shorterglow: 0 0 1px 1px rgba(0, 0, 0, 0.06);
+  --shortestglow: 0 0 1px 1px rgba(0, 0, 0, 0.075);
+
+  --extraglow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+
+  --wshortglow: 0 0 2px 2px rgba(255, 255, 255, 0.3);
+  --wshorterglow: 0 0 1px 1px rgba(255, 255, 255, 0.3);
+
+  --topglow: 0 -10px 10px -10px rgba(0, 0, 0, 0.2);
+  --bottomglow: 0 10px 10px -10px rgba(0, 0, 0, 0.2);
+}

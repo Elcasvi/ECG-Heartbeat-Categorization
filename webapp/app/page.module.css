@@ -1,0 +1,17 @@
+.mainCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.title {
+  margin-top: 50px;
+  font-size: var(--L);
+  font-weight: bold;
+}
+
+.desc {
+  width: 80%;
+  font-size: var(--SX);
+}
