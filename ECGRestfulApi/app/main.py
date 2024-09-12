@@ -3,13 +3,12 @@ from app.model.ECGInput import ECGInput
 from app.model.services.ECGMultiClassClassifier import predict_ecg
 from app.model.services.ECGTwoClassClassifier import predict_illness
 from fastapi.middleware.cors import CORSMiddleware
-
 app = FastAPI()
 # Configure CORS
 orig_origins = [
     "http://localhost:3000",  # Replace with your React app URL
     "http://localhost",        # Add if you have more domains to allow
-    "https://your-react-app-domain.com"  # Replace with your deployed app URL if necessary
+    "https://ecg.fabianlioner.com"  # Replace with your deployed app URL if necessary
 ]
 
 app.add_middleware(
@@ -22,7 +21,7 @@ app.add_middleware(
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Hello FastAPI"}
 
 
 @app.get("/hello/{name}")
