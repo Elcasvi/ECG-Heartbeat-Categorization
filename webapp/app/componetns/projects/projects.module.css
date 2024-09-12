@@ -83,7 +83,7 @@
 
 .img {
   max-height: 300px !important;
-
+  filter: hue-rotate(150deg);
   border-radius: 7px;
   box-shadow: var(--shortglow);
 }
