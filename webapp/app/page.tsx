@@ -38,7 +38,7 @@ export default function Home() {
       {chartData && (
         <div>
           <h2>ECG Data Graph</h2>
-          <VictoryChart theme={VictoryTheme.material}>
+          <VictoryChart width={700} theme={VictoryTheme.material}>
             <VictoryAxis
               tickFormat={(x: { toString: () => any }) => x.toString()}
             />
@@ -51,7 +51,7 @@ export default function Home() {
               x="x"
               y="y"
               style={{
-                data: { stroke: "rgba(75, 192, 192, 1)" },
+                data: { stroke: "rgba(255, 0, 0, 1)" },
               }}
             />
           </VictoryChart>
