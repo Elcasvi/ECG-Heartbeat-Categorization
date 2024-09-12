@@ -82,74 +82,84 @@ export default function Home() {
 
   return (
     <div className={s.mainCont}>
-      <div className={s.title}>ECG Heartbeat Categorization</div>
-      <div className={s.desc}>
-        Este trabajo aborda el desarrollo de un modelo de clasificación para
-        identificar diversas afecciones cardíacas a partir de lecturas de
-        electrocardiogramas (ECG). Dado que las enfermedades cardiovasculares
-        son la principal causa de mortalidad en México, este proyecto se centra
-        en mejorar la detección temprana de condiciones como arritmias, con el
-        fin de reducir las tasas de mortalidad y mejorar la atención médica.
-      </div>
-      <Projects />
-
-      <div className={s.subtitle}>Selecciona una muestra para analizaar</div>
-      <div className={s.categories}>
-        {categories
-          .filter((category) => category.name.toLowerCase() !== "normal")
-          .map((category, index) => (
-            <div
-              key={index}
-              onClick={() => handleCategoryClick(index + 1)}
-              className={
-                selectedCategory != index + 1 ? s.category : s.categorySelected
-              }
-            >
-              {category.name}
-            </div>
-          ))}
-      </div>
-
-      {chartData && (
-        <div>
-          <VictoryChart width={700} theme={VictoryTheme.material}>
-            <VictoryAxis
-              tickFormat={(x: { toString: () => any }) => x.toString()}
-            />
-            <VictoryAxis
-              dependentAxis
-              tickFormat={(y: number) => y.toFixed(2)}
-            />
-            <VictoryLine
-              data={chartData}
-              x="x"
-              y="y"
-              style={{
-                data: { stroke: "rgba(255, 0, 0, 1)" },
-              }}
-              animate={{
-                duration: 1000, // Animation duration in milliseconds
-                onLoad: { duration: 1000 }, // Initial loading animation
-                easing: "linear", // Type of easing function (e.g., "linear", "bounce", etc.)
-              }}
-            />
-          </VictoryChart>
+      <div className={s.section}>
+        <div className={s.title}>ECG Heartbeat Categorization</div>
+        <div className={s.desc}>
+          Este trabajo aborda el desarrollo de un modelo de clasificación para
+          identificar diversas afecciones cardíacas a partir de lecturas de
+          electrocardiogramas (ECG). Dado que las enfermedades cardiovasculares
+          son la principal causa de mortalidad en México, este proyecto se
+          centra en mejorar la detección temprana de condiciones como arritmias,
+          con el fin de reducir las tasas de mortalidad y mejorar la atención
+          médica.
         </div>
-      )}
-      <button onClick={handleApiCall} disabled={loading} className={s.category}>
-        {loading ? "Loading..." : "Analizar datos con AdaBoost"}
-      </button>
-      {responseData && (
-        <div className={s.resultCont}>
-          <div>{"Resultado de la API "}</div>
+        <Projects />
+      </div>
+
+      <div className={s.section}>
+        <div className={s.subtitle}>Selecciona una muestra para analizaar</div>
+        <div className={s.categories}>
+          {categories
+            .filter((category) => category.name.toLowerCase() !== "normal")
+            .map((category, index) => (
+              <div
+                key={index}
+                onClick={() => handleCategoryClick(index + 1)}
+                className={
+                  selectedCategory != index + 1
+                    ? s.category
+                    : s.categorySelected
+                }
+              >
+                {category.name}
+              </div>
+            ))}
+        </div>
+        {chartData && (
           <div>
-            {" "}
-            {responseData}
-            {": "}
-            {categoryMapping[responseData]}
+            <VictoryChart width={700} theme={VictoryTheme.material}>
+              <VictoryAxis
+                tickFormat={(x: { toString: () => any }) => x.toString()}
+              />
+              <VictoryAxis
+                dependentAxis
+                tickFormat={(y: number) => y.toFixed(2)}
+              />
+              <VictoryLine
+                data={chartData}
+                x="x"
+                y="y"
+                style={{
+                  data: { stroke: "rgba(255, 0, 0, 1)" },
+                }}
+                animate={{
+                  duration: 1000, // Animation duration in milliseconds
+                  onLoad: { duration: 1000 }, // Initial loading animation
+                  easing: "linear", // Type of easing function (e.g., "linear", "bounce", etc.)
+                }}
+              />
+            </VictoryChart>
           </div>
-        </div>
-      )}
+        )}
+        <button
+          onClick={handleApiCall}
+          disabled={loading}
+          className={s.category}
+        >
+          {loading ? "Loading..." : "Analizar datos con AdaBoost"}
+        </button>
+        {responseData && (
+          <div className={s.resultCont}>
+            <div>{"Resultado de la API "}</div>
+            <div>
+              {" "}
+              {responseData}
+              {": "}
+              {categoryMapping[responseData]}
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
