@@ -16,3 +16,37 @@
   font-size: var(--SX);
   text-align: center;
 }
+
+.categories {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  font-size: var(--XS);
+}
+
+.category {
+  padding: 10px 20px;
+  background-color: var(--lightergrey);
+  border-radius: 8px;
+  transition: 0.4s;
+}
+
+.categorySelected {
+  padding: 10px 20px;
+  background-color: var(--lightgrey);
+  border-radius: 8px;
+  transition: 0.4s;
+}
+
+.subtitle {
+  margin-top: 50px;
+  font-size: var(--S);
+  font-weight: bold;
+}
+
+.resultCont {
+  font-size: var(--S);
+  margin-bottom: 40px;
+  text-align: center;
+}
