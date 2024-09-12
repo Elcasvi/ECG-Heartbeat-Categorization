@@ -6,7 +6,7 @@ import numpy as np
 
 
 # Load the ECG classifier model
-with open("MLModels/final_model_multiclass_classifier.pkl", "rb") as f:
+with open("app/MLModels/final_model_multiclass_classifier.pkl", "rb") as f:
     ecg_classifier = pickle.load(f)
 
 def predict_ecg(data: list[float]) -> str:

@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 
 # Load the illness classifier model
-with open("MLModels/final_model_two_class_classifier.pkl", "rb") as f:
+with open("app/MLModels/final_model_two_class_classifier.pkl", "rb") as f:
     illness_classifier  = pickle.load(f)
 
 def predict_illness(data: list[float]) -> str:

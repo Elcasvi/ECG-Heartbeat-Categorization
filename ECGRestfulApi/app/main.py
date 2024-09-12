@@ -1,11 +1,24 @@
 from fastapi import FastAPI
-from model.ECGInput import ECGInput
-from model.services.ECGMultiClassClassifier import predict_ecg
-from model.services.ECGTwoClassClassifier import predict_illness
-import warnings
-warnings.filterwarnings("ignore", category=UserWarning)
+from app.model.ECGInput import ECGInput
+from app.model.services.ECGMultiClassClassifier import predict_ecg
+from app.model.services.ECGTwoClassClassifier import predict_illness
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+# Configure CORS
+orig_origins = [
+    "http://localhost:3000",  # Replace with your React app URL
+    "http://localhost",        # Add if you have more domains to allow
+    "https://your-react-app-domain.com"  # Replace with your deployed app URL if necessary
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=orig_origins,  # List of allowed origins
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all methods (GET, POST, etc.)
+    allow_headers=["*"],  # Allow all headers
+)
 
 @app.get("/")
 async def root():
