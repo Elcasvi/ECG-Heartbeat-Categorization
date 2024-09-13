@@ -1,0 +1,124 @@
+.mainCont {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  align-items: stretch !important;
+  padding-bottom: 40px;
+}
+
+.slide {
+  position: relative;
+  width: 90% !important;
+  max-width: 1400px;
+  height: auto;
+}
+
+.projectCont {
+  margin: 0px 20px;
+  user-select: none;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  display: flex !important;
+
+  background: url("data:image/svg+xml,%3Csvg%20viewBox%3D%270%200%20400%20400%27%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%3E%3Cfilter%20id%3D%27noiseFilter%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%277.66%27%20numOctaves%3D%275%27%20stitchTiles%3D%27stitch%27/%3E%3C/filter%3E%3Crect%20width%3D%27100%25%27%20height%3D%27100%25%27%20filter%3D%27url(%23noiseFilter)%27/%3E%3C/svg%3E"),
+    linear-gradient(
+      -30deg,
+      rgba(210, 210, 210, 1) 0%,
+      rgba(244, 244, 244, 1) 100%
+    );
+
+  background-blend-mode: overlay;
+  background-size: cover;
+
+  padding: 20px 20px;
+  box-shadow: 0 0 17px 0px rgba(0, 0, 0, 0.07);
+  border-radius: var(--radius);
+
+  @media (max-width: 850px) {
+    justify-content: space-between;
+    height: 100%;
+  }
+  @media (min-width: 850px) {
+    justify-content: space-between;
+
+    align-items: center;
+  }
+}
+
+.projectInner {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.project {
+  width: 100%;
+  font-size: var(--SX);
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 850px) {
+    height: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  @media (min-width: 850px) {
+    height: 100%;
+    margin: 0px 20px;
+
+    justify-content: center;
+  }
+}
+
+.imgCont {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  max-height: 300px !important;
+  filter: hue-rotate(150deg);
+  border-radius: 7px;
+  box-shadow: var(--shortglow);
+}
+
+@media (max-width: 850px) {
+  .mobile {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .imgCont {
+    width: 100%;
+  }
+}
+/* Project Details */
+.title {
+  font-size: var(--S);
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+    transform: translate3d(0, 30%, 0);
+  }
+  to {
+    opacity: 100%;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
