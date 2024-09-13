@@ -1,0 +1,11 @@
+fastapi[standard]
+uvicorn
+numpy
+pydantic
+scikit-learn~=1.3.2
+numpy
+pandas
+matplotlib
+plotly
+statsmodels
+seaborn
