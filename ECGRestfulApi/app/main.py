@@ -7,6 +7,8 @@ app = FastAPI()
 # Configure CORS
 orig_origins = [
     "http://localhost:3000",  # Replace with your React app URL
+    "https://localhost:44320",  # Replace with your React app URL
+    "https://localhost:7113",
     "http://localhost",        # Add if you have more domains to allow
     "https://ecg.fabianlioner.com"  # Replace with your deployed app URL if necessary
 ]

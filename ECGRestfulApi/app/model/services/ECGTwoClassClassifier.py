@@ -15,7 +15,7 @@ def predict_illness(data: list[float]) -> str:
     # Map prediction to illness type (adjust based on your model)
     if prediction==0.0:
         print("In case 0")
-        return "healthy"
+        return 'healthy'
     elif prediction==1.0:
         print("In case 1")
-        return "sick"
+        return 'sick'
